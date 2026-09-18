@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="city-input" 
+                placeholder="Ingresa el nombre de la ciudad"
+                spellcheck="false"
+                autocomplete="off"
+            >
+            <button onclick="obtenerClima()">
+                <img src="images/icons8-magnifying-glass-100.png" />
+            </button>
+        </div>
+    
+        <div class="clima-info">
+            <p class="clima-texto">Parcialmente nublado</p>
+            <img src="images/icons8-rain-100.png" class="clima-icono" />
+            <h1 class="temp">22ºc</h1>
+            <h2 class="ciudad">Huancayo</h2>
+            <div class="detalles">
+                <div class="col">
+                    <img src="images/icons8-humidity-96.png" />
+                    <div>
+                        <p class="humedad">50%</p>
+                        <p>Humedad</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/icons8-breeze-100.png" />
+                    <div>
+                        <p class="viento">15 km/h</p>
+                        <p>Viento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
